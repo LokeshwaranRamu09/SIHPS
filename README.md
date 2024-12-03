@@ -50,35 +50,7 @@ AWS (EC2 for hosting, S3 for file storage, CloudFront for CDN).
 Firebase for real-time updates (such as messaging and notifications).
 Architecture Diagram:
 plaintext
-Copy code
-    +--------------------+           +--------------------+
-    |   Mobile/Web App   |           |   Mobile/Web App   |
-    |  (Frontend Layer)  | <-------> |  (Frontend Layer)  |
-    +--------------------+           +--------------------+
-             |                            |
-             | REST APIs                 | REST APIs
-             V                            V
-    +--------------------+           +--------------------+
-    |    API Gateway     |           |   API Gateway      |
-    | (Business Logic)   | <-------> | (Business Logic)   |
-    +--------------------+           +--------------------+
-             |                            |
-    +--------+--------+           +-------+--------+
-    |  Authentication |           |   Notifications |
-    |    (JWT)        |           |   (Socket.io)   |
-    +--------+--------+           +-----------------+
-             |                            |
-             V                            V
-     +-------------------+        +-------------------+
-     |      MongoDB      |        |  Payment Gateway  |
-     | (Database Layer)  |        |    (Stripe)       |
-     +-------------------+        +-------------------+
-             |
-             V
-       +---------------------+
-       |    Cloud Hosting    |
-       |   (AWS, Firebase)   |
-       +---------------------+
+![generate a mind map for alumini meet  Layer__  AWS (EC2 for hosting, S3 for file storage, CloudFront for CDN)  Firebase for real-time updates (such_ as messaging and notifications)  Architecture Diagram_ plaintext ](https://github.com/user-attachments/assets/d93e049c-e264-4497-9e99-57a91358ad04)
 
 ## Use Cases
 Alumni Registration:
@@ -110,46 +82,8 @@ Feedback and Surveys:
 Start → Admin creates survey → Alumni notified → Alumni fills out feedback → Admin reviews results → End
 Flowchart Representation:
 plaintext
-Copy code
-+--------------------+
-|   Start            |
-+--------------------+
-        |
-        v
-+------------------------+
-| Alumni accesses platform|
-+------------------------+
-        |
-        v
-+-----------------------------+
-| Fill registration details    |
-+-----------------------------+
-        |
-        v
-+-----------------------------+
-| Validate input?             |
-| (yes/no)                    |
-+-----------------------------+
-        |
-        v
-+------------------------------+
-| Confirmation email sent      |
-+------------------------------+
-        |
-        v
-+------------------------------+
-| Alumni verifies account      |
-+------------------------------+
-        |
-        v
-+------------------------------+
-| Profile created              |
-+------------------------------+
-        |
-        v
-+------------------------------+
-| End                          |
-+------------------------------+
+![generate a mind map for alumini meet  Layer__ Alumni fills out feedback → Admin reviews_ results → End Flowchart Representation_ plaintext Copy code +--------------------+ _ Start _ +--------------------+ _ v +----](https://github.com/user-attachments/assets/96779329-2cc4-49e4-9f49-8cb5c4991d7d)
+
 
 ## Technology Stack
 Front-End:
